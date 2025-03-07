@@ -5,32 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-CLvOTr1i.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BQSZI5Ri.css">
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <form class="form">
-          <label>
-            Delay (ms)
-            <input type="number" name="delay" required />
-          </label>
-
-          <fieldset>
-            <legend>State</legend>
+          <div class="delay">
             <label>
-              <input type="radio" name="state" value="fulfilled" required />
+              Delay (ms)
+              <input class="delay-num" type="number" name="delay" required />
+            </label>
+          </div>
+
+          <fieldset class="state">
+            <legend class="title-state">State</legend>
+            <label class="radio-state">
+              <input
+                class="radio"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
               Fulfilled
             </label>
-            <label>
-              <input type="radio" name="state" value="rejected" required />
+            <label class="radio-state">
+              <input
+                class="radio"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
               Rejected
             </label>
           </fieldset>
 
-          <button type="submit">Create notification</button>
+          <button class="create-btn" type="submit">Create notification</button>
         </form>
       </div>
     </main>
