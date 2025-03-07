@@ -12,24 +12,38 @@
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <form class="form">
-          <label>
-            Delay (ms)
-            <input type="number" name="delay" required />
-          </label>
-
-          <fieldset>
-            <legend>State</legend>
+          <div class="delay">
             <label>
-              <input type="radio" name="state" value="fulfilled" required />
+              Delay (ms)
+              <input class="delay-num" type="number" name="delay" required />
+            </label>
+          </div>
+
+          <fieldset class="state">
+            <legend class="title-state">State</legend>
+            <label class="radio-state">
+              <input
+                class="radio"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
               Fulfilled
             </label>
-            <label>
-              <input type="radio" name="state" value="rejected" required />
+            <label class="radio-state">
+              <input
+                class="radio"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
               Rejected
             </label>
           </fieldset>
 
-          <button type="submit">Create notification</button>
+          <button class="create-btn" type="submit">Create notification</button>
         </form>
       </div>
     </main>

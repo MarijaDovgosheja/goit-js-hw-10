@@ -16,11 +16,21 @@ button {
 button:hover {
   background: #6c8cff;
 }
+button:disabled {
+  background: #cfcfcf;
+}
 input {
   padding: 8px 16px;
   width: 100%;
 }
+input:hover {
+  border: 1px solid #000;
+}
 
+input:disabled {
+  color: #808080;
+  background: #fafafa;
+}
 .text-btn {
   margin-top: 16px;
 
